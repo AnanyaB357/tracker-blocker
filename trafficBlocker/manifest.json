@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Basic Tracker Blocker",
+  "version": "1.0",
+  "description": "Blocks common tracking URLs using declarativeNetRequest.",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "rules.json"
+    }]
+  }
+}
+

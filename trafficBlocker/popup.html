@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Tracker Blocker</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        padding: 10px;
-        width: 200px;
-      }
-    </style>
-  </head>
-  <body>
-    <h3>Tracker Blocker</h3>
-    <p>Blocking common trackers.</p>
-  </body>
+<head>
+  <title>Tracker Blocker Stats</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      width: 300px;
+    }
+    h2 {
+      margin-top: 10px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tracker Blocker Stats</h1>
+  <h2>By Domain</h2>
+  <ul id="domainList">Loading...</ul>
+  <h2>By Category</h2>
+  <ul id="categoryList">Loading...</ul>
+
+  <script src="popup.js"></script>
+</body>
 </html>

@@ -1,21 +1,22 @@
 {
   "manifest_version": 3,
-  "name": "Basic Tracker Blocker",
+  "name": "Tracker Blocker with Profiling Insight",
   "version": "1.0",
-  "description": "Blocks common tracking URLs using declarativeNetRequest.",
+  "description": "Blocks common US trackers and counts their hits by category.",
   "permissions": [
     "declarativeNetRequest",
     "declarativeNetRequestWithHostAccess",
+    "declarativeNetRequestFeedback",
     "storage"
   ],
   "host_permissions": [
     "*://*/*"
   ],
-  "action": {
-    "default_popup": "popup.html"
-  },
   "background": {
     "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
   },
   "declarative_net_request": {
     "rule_resources": [{
